@@ -36,7 +36,8 @@
   "exports": {
     ".": {
       "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs"
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
     }
   },
   "files": [
@@ -47,15 +48,23 @@
     "test": "vitest"
   },
   "devDependencies": {
-    "@license-cop/permissive": "^1.6.2",
+    "@license-cop/permissive": "^1.6.4",
     "@rollup/plugin-commonjs": "^28.0.0",
     "@rollup/plugin-node-resolve": "^15.2.3",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.0.1",
     "@tobysmith568/prettier-config": "^2.1.1",
-    "license-cop": "^1.6.2",
+    "@types/react": "^18.3.12",
+    "jsdom": "^25.0.1",
+    "license-cop": "^1.6.4",
+    "react": "^18.3.1",
     "rollup": "^4.21.1",
     "rollup-plugin-delete": "^2.0.0",
     "rollup-plugin-typescript2": "^0.36.0",
     "typescript": "^5.5.4",
     "vitest": "^2.0.5"
+  },
+  "peerDependencies": {
+    "react": "*"
   }
 }
