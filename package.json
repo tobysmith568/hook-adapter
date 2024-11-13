@@ -1,7 +1,7 @@
 {
   "name": "hook-adapter",
   "version": "0.0.0",
-  "description": "A lightweight adapter pattern for using React hooks in class components",
+  "description": "A lightweight adapter pattern for using React hooks in class components.",
   "license": "ISC",
   "type": "module",
   "keywords": [

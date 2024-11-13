@@ -91,7 +91,7 @@ describe("hook-adapter", () => {
         render() {
           return (
             <div>
-              <HookAdapter hook={useHookUnderTest} hookProps={["one", "two"]}>
+              <HookAdapter hook={useHookUnderTest} parameters={["one", "two"]}>
                 {hookResult => <div data-testid={hookResultTestId}>{hookResult}</div>}
               </HookAdapter>
             </div>
