@@ -1,0 +1,61 @@
+{
+  "name": "hook-adapter",
+  "version": "0.0.0",
+  "description": "A lightweight adapter pattern for using React hooks in class components",
+  "license": "ISC",
+  "type": "module",
+  "keywords": [
+    "react",
+    "hook",
+    "hooks",
+    "adapter",
+    "pattern",
+    "class",
+    "component",
+    "react-hook",
+    "react-hooks"
+  ],
+  "prettier": "@tobysmith568/prettier-config",
+  "packageManager": "pnpm@9.13.0+sha512.beb9e2a803db336c10c9af682b58ad7181ca0fbd0d4119f2b33d5f2582e96d6c0d93c85b23869295b765170fbdaa92890c0da6ada457415039769edf3c959efe",
+  "homepage": "https://github.com/tobysmith568/hook-adapter#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tobysmith568/hook-adapter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tobysmith568/hook-adapter/issues"
+  },
+  "author": {
+    "name": "Toby Smith",
+    "email": "contact@tobythe.dev",
+    "url": "https://tobysmith.uk"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "@license-cop/permissive": "^1.6.2",
+    "@rollup/plugin-commonjs": "^28.0.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@tobysmith568/prettier-config": "^2.1.1",
+    "license-cop": "^1.6.2",
+    "rollup": "^4.21.1",
+    "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.5"
+  }
+}
