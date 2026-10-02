@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@license-cop/permissive':
-        specifier: ^1.8.0
-        version: 1.8.0
+        specifier: ^2.0.0
+        version: 2.1.1
       '@rollup/plugin-commonjs':
         specifier: ^29.0.0
         version: 29.0.0(rollup@4.59.0)
@@ -423,8 +423,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@license-cop/permissive@1.8.0':
-    resolution: {integrity: sha512-cs6IEhzC+MrFxWfa9kif8ypcdgki9ZtBqKKjrp/RyKJAyVVfXt7RrUR0nC4YaL92YnSeQkc/jVFnKhl9Gs/kig==}
+  '@license-cop/permissive@2.1.1':
+    resolution: {integrity: sha512-xDsm5VOHPs8Aq5yowIBh6vnIJRsLzmB4zSzMtbgnUyOMERXZBEdGT6effiizKrfo2tUDumUyolYDKB94RaVB/w==}
 
   '@next/eslint-plugin-next@15.1.7':
     resolution: {integrity: sha512-kRP7RjSxfTO13NE317ek3mSGzoZlI33nc/i5hs1KaWpK+egs85xg0DJ4p32QEiHnR0mVjuUfhRIun7awqfL7pQ==}
@@ -3858,7 +3858,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@license-cop/permissive@1.8.0': {}
+  '@license-cop/permissive@2.1.1': {}
 
   '@next/eslint-plugin-next@15.1.7':
     dependencies:
@@ -7281,8 +7281,8 @@ snapshots:
   vite@7.3.3(@types/node@22.13.4):
     dependencies:
       esbuild: 0.27.7
-      fdir: 6.5.0(picomatch@4.0.4)
-      picomatch: 4.0.4
+      fdir: 6.5.0(picomatch@4.0.7)
+      picomatch: 4.0.7
       postcss: 8.5.15
       rollup: 4.61.0
       tinyglobby: 0.2.17
