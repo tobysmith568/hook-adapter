@@ -48,7 +48,7 @@
     "test": "vitest"
   },
   "devDependencies": {
-    "@license-cop/permissive": "^1.8.0",
+    "@license-cop/permissive": "^2.0.0",
     "@rollup/plugin-commonjs": "^29.0.0",
     "@rollup/plugin-node-resolve": "^16.0.0",
     "@testing-library/jest-dom": "^7.0.0",
@@ -58,7 +58,7 @@
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
     "jsdom": "^30.0.0",
-    "license-cop": "^1.8.0",
+    "license-cop": "^2.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "rollup": "^4.34.7",
