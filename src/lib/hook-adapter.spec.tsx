@@ -1,13 +1,11 @@
-﻿import { cleanup, render, screen } from "@testing-library/react";
+﻿import { render, screen } from "@testing-library/react";
+import { describe, expect, it } from "bun:test";
 import { Component } from "react";
-import { afterEach, describe, expect, it } from "vitest";
 import { HookAdapter } from "./hook-adapter";
 
 const hookResultTestId = "hook-result";
 
 describe("hook-adapter", () => {
-  afterEach(cleanup);
-
   it("should call the hook exactly once per render", () => {
     let hookCallCount = 0;
 

@@ -1,5 +1,5 @@
 ﻿/* eslint-disable @typescript-eslint/no-explicit-any */
-import { ReactNode } from "react";
+import type { ReactNode } from "react";
 
 export type HookAdapterProps<THook extends (...args: any) => any> = {
   hook: THook;

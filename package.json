@@ -16,7 +16,7 @@
     "react-hooks"
   ],
   "prettier": "@tobysmith568/prettier-config",
-  "packageManager": "pnpm@10.34.9+sha512.f49b5a8ea0fdedb44bb3c0c1d6575092a53c2950d95b7ad15df11f17974877a2de3a01c07e934e9b28ce716e51c09a94962c7306d09be2e1e4b18a8c8762fd32",
+  "packageManager": "bun@1.4.4",
   "homepage": "https://github.com/tobysmith568/hook-adapter#readme",
   "repository": {
     "type": "git",
@@ -32,40 +32,42 @@
   },
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
+  "types": "./dist/index.d.cts",
   "exports": {
     ".": {
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs",
-      "types": "./dist/index.d.ts"
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
     }
   },
   "files": [
     "dist/**"
   ],
   "scripts": {
-    "build": "rollup -c",
-    "test": "vitest"
+    "build": "tsdown",
+    "test": "bun test"
   },
   "devDependencies": {
+    "@happy-dom/global-registrator": "^21.0.4",
     "@license-cop/permissive": "^2.2.1",
-    "@rollup/plugin-commonjs": "^29.0.0",
-    "@rollup/plugin-node-resolve": "^16.0.0",
     "@testing-library/jest-dom": "^7.0.0",
     "@testing-library/react": "^16.2.0",
-    "@tobysmith568/eslint-config": "^2.3.0",
+    "@tobysmith568/eslint-config": "^3",
     "@tobysmith568/prettier-config": "^2.2.1",
+    "@types/bun": "^1.4.4",
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
-    "jsdom": "^30.0.0",
+    "happy-dom": "^21.0.4",
     "license-cop": "^2.2.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "rollup": "^4.34.7",
-    "rollup-plugin-delete": "^3.0.0",
-    "rollup-plugin-typescript2": "^0.37.0",
-    "typescript": "^5.7.3",
-    "vitest": "^5.0.0"
+    "tsdown": "^0.23.5",
+    "typescript": "^6"
   },
   "peerDependencies": {
     "react": "*",
