@@ -11,8 +11,6 @@
     "isolatedModules": true,
     "moduleDetection": "force",
     "skipLibCheck": true,
-    "declaration": true,
-    "sourceMap": true,
     "types": ["bun"]
   },
   "include": ["src", "test-setup"]
