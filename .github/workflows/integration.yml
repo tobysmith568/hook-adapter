@@ -97,7 +97,7 @@ jobs:
         run: bun install --frozen-lockfile
 
       - name: Unit Test
-        run: bun x vitest run
+        run: bun test
 
   licenses:
     name: Check Licenses
